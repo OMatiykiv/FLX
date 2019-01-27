@@ -1,0 +1,189 @@
+body {
+  background-color: white;
+  color: black;
+  font-style: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  text-transform: uppercase; }
+  body p, body .post-description {
+    text-transform: none; }
+
+header {
+  background-image: url("../img/header_background_v1.jpg");
+  height: 100vmin;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: -1.2vh;
+  margin-left: -0.5vw;
+  margin-right: -0.7vw; }
+  header .top-wrapper {
+    display: flex; }
+    header .top-wrapper .logo {
+      height: 3vmin; }
+      header .top-wrapper .logo img {
+        height: 17vmin; }
+    header .top-wrapper nav {
+      position: absolute;
+      width: 100%;
+      text-align: right; }
+      header .top-wrapper nav a {
+        margin-right: 0px;
+        margin-left: auto;
+        padding-top: 2vmin;
+        padding-right: 16.5vmin;
+        padding-left: 16.5vmin;
+        padding-bottom: 2vmin;
+        display: inline-block;
+        font-size: 2vmin;
+        color: white;
+        border: 0.2vmin solid #607d8b;
+        border-width: 0px 0.2vmin 0px 0px;
+        text-decoration: none;
+        font-style: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif; }
+  header section {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center; }
+    header section h1 {
+      color: white;
+      font-size: 3vmin;
+      font-style: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif; }
+    header section a {
+      color: white;
+      display: inline-block;
+      font-size: 2vmin;
+      text-decoration: none;
+      background-color: #01acac;
+      padding: 1.8vmin 9vmin;
+      margin-right: 0px;
+      margin-left: 0px;
+      font-style: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif; }
+      header section a:hover {
+        background-color: #01c5c5; }
+
+main {
+  margin-left: 16vw;
+  margin-right: 16vw;
+  align-items: flex-end; }
+  main .toolbar {
+    display: block;
+    padding: 15px 0px;
+    text-align: right; }
+    main .toolbar input {
+      background-color: white;
+      border: solid 1px #607d8b;
+      padding: 10px 20px;
+      margin-right: 0px;
+      color: black; }
+  main .post-list {
+    align-items: flex-end; }
+    main .post-list h1 {
+      text-transform: uppercase;
+      margin-bottom: 0; }
+  main section {
+    display: flex;
+    flex-direction: column; }
+    main section article {
+      background: #efefef;
+      padding: 10px;
+      margin-bottom: 20px;
+      display: flex; }
+      main section article .post-description {
+        color: red;
+        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+        padding-bottom: 5px;
+        border-bottom: solid 1px #607d8b;
+        margin-left: 15px;
+        margin-bottom: 5px;
+        margin-top: 3px;
+        font-size: 12px; }
+      main section article h3 {
+        color: #0097a7;
+        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+        margin-left: 15px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-size: 16px;
+        font-weight: bold; }
+      main section article p {
+        margin-left: 15px;
+        margin-bottom: 0px;
+        margin-top: 0px; }
+      main section article .btn {
+        display: block;
+        padding: 15px 100px;
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-left: auto;
+        text-transform: uppercase;
+        background-color: #01acac;
+        color: white;
+        font-size: 15px;
+        border: none; }
+        main section article .btn:hover {
+          background-color: #01c5c5; }
+  main .about h1 {
+    text-align: right;
+    margin-bottom: -10px;
+    text-transform: uppercase; }
+  main .about img {
+    width: 66vw; }
+  main #contact {
+    text-align: right;
+    text-transform: uppercase; }
+    main #contact h1 {
+      margin-top: 50px;
+      margin-bottom: 0px; }
+    main #contact h4 {
+      margin-top: 0px; }
+    main #contact form {
+      border-color: solid 5px #607d8b; }
+      main #contact form h5 {
+        margin-bottom: 0;
+        text-transform: none;
+        color: #0097a7;
+        font-size: 18px;
+        font-weight: lighter; }
+      main #contact form .firstRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%; }
+        main #contact form .firstRow #fullName {
+          display: flex;
+          flex-direction: column;
+          align-self: flex-start;
+          width: inherit;
+          padding-right: 10px; }
+        main #contact form .firstRow #email {
+          display: flex;
+          flex-direction: column;
+          align-self: flex-end;
+          width: inherit;
+          padding-left: 10px; }
+        main #contact form .firstRow input {
+          height: 30px;
+          border: 1px solid #607d8b;
+          background-color: white; }
+      main #contact form #question {
+        display: flex;
+        flex-direction: column; }
+        main #contact form #question textarea {
+          border: 1px solid #607d8b;
+          background-color: white; }
+      main #contact form button {
+        align-self: flex-end;
+        text-transform: uppercase;
+        color: white;
+        background: #01acac;
+        border: none;
+        padding: 10px 80px;
+        margin-top: 15px;
+        font-size: 14px;
+        justify-self: flex-end; }
+
+footer {
+  align-self: flex-start;
+  margin-left: 15px;
+  font-size: 8px; }

@@ -1,0 +1,267 @@
+body {
+    background-color: $backgroundColor;
+    color: $textColor;
+    font-style: $textFont;
+    text-transform: uppercase;
+    p, .post-description{
+        text-transform: none;
+    }
+}
+
+header {
+    background-image: $headerImage;
+    height: 100vmin;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: -1.2vh;
+    margin-left: -0.5vw;
+    margin-right: -0.7vw;
+
+    .top-wrapper {
+        display:flex;	
+    
+        .logo {
+            height: 3vmin;
+            
+            img{
+                height: 17vmin;
+            }
+        }
+
+        nav {
+            position: absolute;
+            width: 100%;
+            text-align: right;
+
+            a { 
+                margin-right:0px;
+                margin-left:auto;
+                padding-top:2vmin;
+                padding-right: 16.5vmin;
+                padding-left: 16.5vmin;
+                padding-bottom: 2vmin;                  
+                display:inline-block;
+                font-size: 2vmin;
+                color: $headerTextColor;
+                border: 0.2vmin solid $borderColor;
+                border-width: 0px 0.2vmin 0px 0px;
+                text-decoration: none;
+                font-style: $textFont;
+            }
+        }
+    }
+
+    section{
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+
+        h1{
+            color: $headerTextColor;
+            font-size: 3vmin;
+            font-style: $textFont;
+        }
+
+        a{
+            color: white;
+            display:inline-block;
+            font-size: 2vmin;
+            text-decoration: none;
+            background-color: $buttonColor;
+		    padding: 1.8vmin 9vmin;
+		    margin-right:0px;
+            margin-left:0px;
+            font-style: $textFont;
+
+            &:hover{
+                background-color: lighten($buttonColor, 5%);
+            }
+        }
+    }
+}
+
+main {
+    margin-left: 16vw;
+    margin-right: 16vw;
+    align-items: flex-end;
+
+    .toolbar {
+        display:block;
+		padding:15px 0px;
+        text-align: right;
+        
+        input{
+            background-color: $backgroundColor;
+            border: solid 1px $borderColor;
+            padding:10px 20px;
+            margin-right:0px;
+            color: $textColor;
+        }
+    }
+
+    .post-list {
+        align-items: flex-end;
+
+        h1 {
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        
+        article{
+            background: $blogBlockColor;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+
+            .post-description {
+                color: $postDescriptionColor;
+                font: $textFont;
+                padding-bottom: 5px;
+                border-bottom: solid 1px $borderColor;
+                margin-left: 15px;
+                margin-bottom: 5px;
+                margin-top: 3px;
+                font-size: 12px;
+            }
+            
+            h3{
+                color: $titleColor;
+                font: $textFont;
+                margin-left: 15px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            p{
+                
+                margin-left: 15px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+
+            }
+
+            .btn {
+                display:block;
+                padding:15px 100px;
+                margin-top: 20px;
+		        margin-right:0px;
+                margin-left:auto;
+                text-transform: uppercase;
+                background-color: $buttonColor;
+                color: white;
+                font-size: 15px;
+                border: none;
+                
+                &:hover{
+                    background-color: lighten($buttonColor, 5%);
+                }
+            }
+        }
+    }
+
+    .about{     
+        h1{
+            text-align: right;
+            margin-bottom: -10px;
+            text-transform: uppercase;
+        }
+
+        img{
+            width: 66vw;
+        }
+    }
+
+    #contact{
+        text-align: right;
+        text-transform: uppercase;
+
+        h1{
+            margin-top: 50px;
+        margin-bottom: 0px;
+        }
+
+        h4{
+            margin-top: 0px;
+        }
+
+        form{
+            border-color: solid 5px $borderColor;
+
+            h5{
+                margin-bottom: 0;
+                text-transform: none;
+                color: $titleColor;
+                font-size: 18px;
+                font-weight:lighter;
+                 
+            }
+
+            .firstRow{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                
+                #fullName{
+                    display: flex;
+                    flex-direction: column;
+                    align-self: flex-start;
+                    width: inherit;
+                    padding-right: 10px;
+                }
+
+                #email{
+                    display: flex;
+                    flex-direction: column;
+                    align-self: flex-end;
+                    width: inherit;
+                    padding-left: 10px;
+                }
+                
+                input{
+                    height: 30px;
+                    border:1px solid $borderColor;
+                    background-color: $backgroundColor;
+                }
+            }
+
+            #question{
+                display: flex;
+                flex-direction: column;                 
+
+                textarea{
+                    border:1px solid $borderColor;
+                    background-color: $backgroundColor;
+                }
+            }
+
+            button{
+                align-self: flex-end;
+                text-transform: uppercase;
+                color: white;
+                background: $buttonColor;
+                border: none;
+                padding: 10px 80px;
+                margin-top: 15px;
+                font-size: 14px;
+                justify-self: flex-end;
+            }
+        }
+    }
+}
+
+footer{
+    align-self: flex-start;
+    margin-left: 15px;
+    font-size: 8px;
+}
