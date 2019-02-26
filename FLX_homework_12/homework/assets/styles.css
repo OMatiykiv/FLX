@@ -1,0 +1,81 @@
+*, html {
+    font-family: sans-serif;
+}
+
+#root {
+    width: 50%;
+    min-height: 300px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+input {
+    cursor: auto;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0;
+    padding: 0;
+    width: 50%;
+}
+
+a {
+	text-decoration: none;
+    color: black;
+    font-size: 3vh;
+}
+
+#addTask {
+    display: flex;
+    margin: 0 auto;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.checkBtn {
+    background: url("../assets/img/todo-s.png") no-repeat;
+    background-size: cover;
+    border: none;
+    padding: 15px;
+}
+
+.checked {
+    background: url("../assets/img/done-s.png") no-repeat;
+    background-size: cover;
+}
+
+.delBtn {
+    background: url("../assets/img/remove-s.jpg") no-repeat;
+    background-size: cover;
+    border: none;
+    padding: 15px;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.addTask,
+.saveBtn,
+.cancelBtn {
+    background-color: #a7a4a7;
+    border-radius: 5px;
+    display: flex;
+    margin: 0 auto;
+    display: inline-block;
+}
+
